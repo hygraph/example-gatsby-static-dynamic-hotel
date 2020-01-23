@@ -1,0 +1,19 @@
+module.exports.chunk = (input, size) => {
+  return input.reduce((arr, item, idx) => {
+    return idx % size === 0
+      ? [...arr, [item]]
+      : [...arr.slice(0, -1), [...arr.slice(-1)[0], item]]
+  }, [])
+}
+
+module.exports.merge = (arr1, arr2) =>
+  arr1.map(({ id, ...minPayload }) => {
+    let extendedPayload
+
+    arr2.forEach(entry => {
+      if (entry.id === id) {
+        extendedPayload = entry
+      }
+    })
+    return { ...minPayload, ...extendedPayload }
+  })
