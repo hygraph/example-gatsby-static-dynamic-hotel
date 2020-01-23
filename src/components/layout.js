@@ -52,7 +52,7 @@ const Layout = ({ children, backgroundImage, inverted }) => {
               <FontAwesomeIcon icon={faTwitter} />
             </a>
             <a
-              href="https://www.linkedin.com/company/18152461/admin/"
+              href="https://www.linkedin.com/company/graphcms/"
               className="mr-4"
             >
               <FontAwesomeIcon icon={faLinkedin} />
