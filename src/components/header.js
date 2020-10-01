@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <a
-        to="https://app.graphcms.com/signup"
+        href="https://app.graphcms.com/signup"
         className="ml-auto px-4 py-2 bg-yellow-600 rounded-sm font-bold"
       >
         Free GraphCMS Account!
